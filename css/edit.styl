@@ -1,0 +1,107 @@
+input
+textarea
+  box-sizing border-box
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  padding 1px
+h2
+  margin 0
+  font-size 1.125em
+  font-family OpenSans
+  line-height 1.25em
+  font-weight 500
+  color rgba(50,56,69,1)
+.control
+  border-radius 5px
+
+.control.edit
+  border-radius 0px
+
+.control.label
+.control.edit
+  word-wrap break-word
+  padding-left 1em
+  padding-bottom 0.5em
+.control.edit
+.control.label
+.control.button
+  position relative
+  font-size 0.8125em
+  line-height 1.5em
+  height auto
+.control.edit.is-disabled
+.control.label.is-disabled
+.control.button.is-disabled
+  opacity .5
+.control.label
+  float right
+  letter-spacing .01em
+  text-align right
+  color #96979b
+  display inline-block
+  margin-top 0.25em
+  padding-left 1em
+.control.label.cont-label
+  text-align left
+.control.button input
+  font-size 1em
+  border-radius 5px
+  margin-bottom 1px
+  outline none
+  border none
+
+.control.edit input
+.control.edit textarea
+  width 100%
+  font-size 1em
+  font-weight 400
+  color: rgba(50,56,69,1)
+  letter-spacing .01em
+  text-align left
+  outline none
+  /*padding 0 0.46151em 0 0.46151em
+  margin-bottom 0.3076923em*/
+  padding-top 0.25em
+  /*padding-bottom 0.25em*/
+  border-left none
+  border-top none
+  border-right  none
+  border-bottom dotted 1px #c6c6c8
+  /*-webkit-transition: padding-bottom 0.1s ease, border-bottom 0.1s ease, margin-bottom 0.1s ease, height 0.2s ease
+  -moz-transition: padding-bottom 0.1s ease, border-bottom 0.1s ease, margin-bottom 0.1s ease, height 0.2s ease
+  -ms-transition: padding-bottom 0.1s ease, border-bottom 0.1s ease, margin-bottom 0.1s ease, height 0.2s ease
+  -o-transition: padding-bottom 0.1s ease, border-bottom 0.1s ease, margin-bottom 0.1s ease, height 0.2s ease
+  transition: padding-bottom 0.1s ease, border-bottom 0.1s ease, margin-bottom 0.1s ease, height 0.2s ease*/
+  &:focus
+    background-color #f2f7fe
+    /*padding-bottom 0.3076923em
+    margin-bottom 0*/
+    border-bottom dotted 1px #508ce6
+    /*box-shadow inset 0 -1px #508ce6
+    -moz-box-shadow inset 0 -1px #508ce6*/
+  &:hover
+    border-bottom dotted 1px #508ce6
+    /*box-shadow inset 0 -1px #508ce6
+    -moz-box-shadow inset 0 -1px #508ce6*/
+  &::selection
+    background #508ce6
+.control.button
+  .is-input-wrapper
+    margin-right 0.825em
+.control.edit input
+.control.edit textarea
+.control.label
+  font-family OpenSans
+  height auto
+.control.button input
+  font-family OpenSans
+.control.edit textarea
+  min-height 2em
+
+tr > td > div.c-content > div.control-wrapper > .control.label
+  margin-top 0.75em
+  bottom 0px
+  right 0px
+  padding-right 1em
+textarea
+  resize none

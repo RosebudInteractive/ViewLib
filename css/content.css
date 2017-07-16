@@ -1,0 +1,100 @@
+.is-device-bar {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  background: linear-gradient(to right, #445368 0px, #4f5e73 1.5em, #4f5e73 100%);
+/*background-color #4f5e73*/
+  -webkit-transition: -webkit-flex 0.5s ease;
+  -moz-transition: flex 0.5s ease;
+  -ms-transition: -ms-flex 0.5s ease;
+  -o-transition: flex 0.5s ease;
+  transition: flex 0.5s ease;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 1 1 7.125em;
+  -ms-flex: 0 0 7.125em;
+  flex: 0 0 7.125em;
+/*flex 0 0 7.125em
+  -webkit-flex 0 0 7.125em
+  -ms-flex: 1 0 0 7.125em
+  -moz-flex 0 0 0px
+  -webkit-box-flex 0 0 7.125em
+  -moz-box-flex 0 0 0px*/
+}
+.is-content.is-device-bar-hidden div.is-device-bar {
+  flex: 0 0 0px;
+  -webkit-flex: 0 0 0px;
+  -ms-flex: 0 0 0px;
+  -moz-flex: 0 0 0px;
+}
+.is-device-wrapper {
+  height: 100%;
+}
+.is-device-icon {
+  height: 3.25em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+.is-device-icon.is-pressed {
+  background-color: #27374a;
+}
+.is-device-icon:hover {
+  background-color: #27374a;
+}
+.is-device-icon-wrapper {
+  height: 2.375em;
+  width: auto;
+  padding-left: 2.375em;
+  opacity: 1;
+  color: #fff;
+}
+.is-device-icon.is-tabs {
+  padding-top: 1em;
+  height: 1.375em;
+}
+.is-device-icon.is-tabs .is-device-icon-wrapper {
+  padding-left: 2.875em;
+}
+.is-device-icon.is-green div.is-device-icon-wrapper {
+  color: #35c367;
+}
+.is-device-icon.is-blue div.is-device-icon-wrapper {
+  color: #5195e5;
+}
+.is-device-text {
+  text-align: center;
+  color: #fff;
+  font-size: 0.75em;
+  overflow: hidden;
+  width: 9.5em;
+}
+.is-device-icon svg {
+  -webkit-transition: color 0.5s ease, opacity 0.5s ease;
+  -moz-transition: color 0.5s ease, opacity 0.5s ease;
+  -ms-transition: color 0.5s ease, opacity 0.5s ease;
+  -o-transition: color 0.5s ease, opacity 0.5s ease;
+  transition: color 0.5s ease, opacity 0.5s ease;
+}
+.is-left-content {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: padding-right 0.5s ease;
+  -moz-transition: padding-right 0.5s ease;
+  -ms-transition: padding-right 0.5s ease;
+  -o-transition: padding-right 0.5s ease;
+  transition: padding-right 0.5s ease;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  position: relative;
+}
+.is-content.is-device-bar-hidden div.is-left-content {
+  padding-right: 0;
+}

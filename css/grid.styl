@@ -1,0 +1,256 @@
+.grid-b
+  /*border: 1px solid #d0d4d9;*/
+  position: absolute
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family OpenSans
+  line-height 1.5em
+  cursor default
+.grid-b.is-big
+  line-height 2em
+.grid-b .table-bl
+  width 100%
+  table-layout fixed
+  border-collapse collapse
+
+.grid-b td
+  width auto
+.grid-b table
+  background-color #ebf1fe
+
+/* Настройки внешнего вида грида */
+.grid-b.no-alter-rows table tbody
+  background-color #ffffff
+.grid-b:not(.no-alter-rows) table tr:nth-child(even)
+  background-color #ffffff
+.grid-b.white-header .header-bl table thead
+  background-color #ffffff
+.grid-b.has-no-paginator .grid-paginator-b
+  display none
+.grid-b.has-horizontal-lines tr.grid-tr-bh:not(:first-child):not(:focus):not(:hover)  td.grid-body-td-bh
+.grid-b.has-horizontal-lines tr.grid-tr-bh:not(:first-child):not(.is-check)  td.grid-body-td-bh
+  box-shadow inset 0 0.0625em 0 #d7e2f5
+  -webkit-box-shadow inset 0 0.0625em 0 #d7e2f5
+  -moz-box-shadow inset 0 0.0625em 0 #d7e2f5
+
+.grid-b.has-horizontal-lines tr.grid-tr-bh.is-check+tr.grid-tr-bh td.grid-body-td-bh
+.grid-b.has-horizontal-lines tr.grid-tr-bh.is-check:not(:hover) td.grid-body-td-bh
+  box-shadow none !important
+  -webkit-box-shadow none !important
+  -moz-box-shadow none !important
+.grid-b.has-vertical-lines  td.grid-body-td-bh:not(.is-last)
+  box-shadow inset -0.0625em 0 0 #d7e2f5
+  -webkit-box-shadow inset -0.0625em 0 0 #d7e2f5
+  -moz-box-shadow inset -0.0625em 0 0 #d7e2f5
+
+/*.grid-b.has-horizontal-lines tr.grid-tr-bh:not(.is-check):not(:hover):not(:first-child):not(:focus) td.grid-body-td-bh
+  box-shadow inset 0 0.0625em 0 #d7e2f5
+  -webkit-box-shadow inset 0 0.0625em 0 #d7e2f5
+  -moz-box-shadow inset 0 0.0625em 0 #d7e2f5
+.grid-b.has-horizontal-lines tr.grid-tr-bh:hover + tr.grid-tr-bh td.grid-body-td-bh
+  box-shadow none
+  -webkit-box-shadow none
+  -moz-box-shadow none*/
+/*border-bottom solid 1px #d7e2f5*/
+
+.grid-th-bh.is-margin,
+.grid-b table.table-bl td.is-margin
+  width 1.5em
+
+/* заголовок */
+.grid-b .header-bl
+  position absolute
+  top 0px
+  z-index 1
+.grid-b.is-big .header-bl,
+.grid-b.is-big .header-bl tr
+  height 2.25em
+
+.grid-b table thead tr th
+  border-bottom solid 1px #d7e2f5
+  /*border-top solid 1px #d7e2f5*/
+
+.grid-th-bh .th-text-be
+  font-size 0.75em
+  font-weight normal
+  padding-left 0.5em
+  padding-right 0.5em
+  position relative
+  width 100%
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  text-align left
+.grid-b.is-big .grid-th-bh .th-text-be
+  padding-left 1em
+  padding-right 1em
+  color #718ab2
+.grid-b table th div
+  font-size 0.75em
+  font-weight normal
+.text-ellipsis-gm
+  white-space nowrap
+  -webkit-text-overflow ellipsis
+  -moz-text-overflow ellipsis
+  -khtml-text-overflow ellipsis
+  -icab-text-overflow ellipsis
+  -o-text-overflow ellipsis
+  text-overflow ellipsis
+  overflow hidden
+.grid-th-bh
+  position relative
+
+.grid-th-bh:not(.is-last)
+  &:after
+    content ''
+    width 0.0625em
+    height 100%
+    position absolute
+    z-index 1
+    -webkit-box-sizing border-box
+    -moz-box-sizing border-box
+    box-sizing border-box
+    top 0px
+    right -0.0625em
+    background #bcc2c9
+    background -moz-linear-gradient(bottom, #bcc2c9 0%, #ebf1fe 50%)
+    background -webkit-gradient(linear, left bottom, left top, color-stop(0%, #d7e2f5), color-stop(50%, #ebf1fe))
+    background -webkit-linear-gradient(bottom, #d7e2f5 0%, #ebf1fe 50%)
+    background -o-linear-gradient(bottom, #d7e2f5 0%, #ebf1fe 50%)
+    background -ms-linear-gradient(bottom, #d7e2f5 0%, #ebf1fe 50%)
+    background linear-gradient(to top, #d7e2f5 0%, #ebf1fe 92%)
+
+
+/* тело */
+.grid-b .content-bhl
+  font-size 0.75em
+  text-overflow ellipsis
+  padding-left 0.4601em
+  padding-right 0.4601em
+  -webkit-text-overflow ellipsis
+  -moz-text-overflow ellipsis
+  -khtml-text-overflow ellipsis
+  -icab-text-overflow ellipsis
+  -o-text-overflow ellipsis
+  text-overflow ellipsis
+  overflow hidden
+  white-space nowrap
+.grid-body-td-bh
+  height: 1.55em;
+  position: relative;
+.grid-b.is-big .content-bhl
+  font-size 0.815em
+  padding-left  1em
+  padding-right 1em
+.grid-b.is-big .grid-body-td-bh,
+.grid-b.is-big .grid-tr-bh
+  height: 2.25em;
+
+  /* футер */
+.grid-b .grid-paginator-b
+  bottom 0
+  position absolute
+  z-index 3
+  width 100%
+  height  1.75em/*1.9375em*/
+  background-color #ffffff
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  padding-right 1.5em
+  border-top solid 1px #d7e2f5
+  line-height 1.5em
+
+.grid-b .text-with-icon-b
+  height 100%
+  float right
+  margin-left 0.1875em
+  margin-right 0.5em
+.grid-b .text-with-icon-b .text-be
+  height 100%
+  font-size 0.75em
+.grid-b .grid-footer-icon
+  float right
+  margin-top 0.2em
+  margin-left 0.75em
+.grid-paginator-b .text-with-icon-b .text-with-icon-b-wrapper
+  &:after
+    content ''
+    position absolute
+    top 0.625em
+    right 8.25em
+    border-top 0.25em solid #555a67
+    border-left 0.25em solid transparent
+    border-right 0.25em solid transparent
+
+/* фокус */
+.grid-tr-bh:focus,
+.grid-tr-bh.is-check:focus
+  background-color #5195e5 !important
+  color #ffffff
+.grid-tr-bh.is-check
+  //background-color #7b8daa !important
+  //color #ffffff
+  outline 0.0625em solid #6ca9f0
+  z-index 3005
+.grid-tr-bh.is-check:not(:hover) td
+  box-shadow none !important
+  -webkit-box-shadow none !important
+  -moz-box-shadow none !important
+
+.grid-tr-bh:focus:hover,
+.grid-tr-bh.is-check:hover
+  box-shadow inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+  -webkit-box-shadow inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+  -moz-box-shadow inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+
+
+.grid-tr-bh:focus:hover td,
+.grid-tr-bh.is-check:hover td
+  box-shadow inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff;
+  -webkit-box-shadow inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff;
+  -moz-box-shadow inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff;
+
+.grid-tr-bh:focus:hover td:first-child,
+.grid-tr-bh.is-check:hover td:first-child
+  box-shadow inset 0.125em 0 0 #fff, inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+  -webkit-box-shadow inset 0.125em 0 0 #fff, inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+  -moz-box-shadow inset 0.125em 0 0 #fff, inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+
+.grid-tr-bh:focus:hover td:last-child,
+.grid-tr-bh.is-check:hover td:last-child
+  box-shadow inset -0.0625em 0 0 #fff, inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+  -webkit-box-shadow inset -0.0625em 0 0 #fff, inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+  -moz-box-shadow inset -0.0625em 0 0 #fff, inset 0 0.0625em 0 #fff, inset 0 -0.0625em 0 #fff
+
+/* прокрука */
+.grid-b .scrollable-bl
+  min-height 100%
+  height 100%
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  padding-top 1.5em
+  padding-bottom 1.5em
+  display flex
+.grid-b.is-big .scrollable-bl
+  padding-top 2.25em
+.grid-b.has-no-paginator .scrollable-bl
+  padding-bottom 0px
+.grid-b .scrollable-bl .scrollable-bll
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  min-height 100%
+  height 100%
+  overflow scroll
+  .iScrollLoneScrollbar
+    .iScrollIndicator
+      opacity 0
+    &:hover
+      .iScrollIndicator
+        opacity 1
+
+

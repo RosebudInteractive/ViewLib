@@ -1,0 +1,417 @@
+.designer
+  .side-padding
+    padding 0 1em
+    flex 70 0 1px
+    display flex
+    flex-direction column
+    z-index 2
+    background-color #333947
+  .is-system-panel
+    min-width 10em
+    border-top 1px solid #4e5b6d
+    height 2.9375em
+    .system-panel-section-left
+      height 100%
+      .system-toolbar-icon.button
+        height 2.9375em
+        .system-toolbar-icon-wrapper
+          padding-top 0.8em
+          padding-left 0.8em
+    .layout-tab:not(:last-child)
+      border-color #4e5b6d
+      border-right-width: 1px;
+      border-right-style: solid;
+    .layout-tab
+      display inline
+      float left
+      height 100%
+      color #ffffff
+      position relative
+      .tab-wrapper
+        width 100%
+        height 100%
+        display table
+        text-align center
+        .controls
+          display table-cell
+          vertical-align middle
+          .icon
+            position relative
+            top 5px
+          input, div
+            display inline
+      div.to-value
+        position absolute
+        right -1.5em
+        top 0
+        font-size 0.6875em
+        z-index 2
+        color #98a8c2
+        .value-l
+          display block
+          cursor e-resize
+        .value-e
+          display none
+          input
+            width 2.5em
+            font-size 0.6875em
+            color #98a8c2
+            font-family  OpenSans, sans-serif
+            background-color transparent
+            border none
+      div.to-value.edit-mode
+        .value-l
+          display none
+        .value-e
+          display block
+      .arrows
+        position absolute
+        bottom 0
+        background-color #508ce6
+        height 1em
+        border-top-left-radius 6px
+        border-top-right-radius 6px
+        opacity 0
+        width 18px
+        -webkit-transition opacity .15s ease-in-out
+        -moz-transition opacity .15s ease-in-out
+        -ms-transition opacity .15s ease-in-out
+        -o-transition opacity .15s ease-in-out
+        transition opacity .15s ease-in-out
+        .line
+          height 32px
+          background-color #508ce6
+          position absolute
+          top -31px
+          z-index 2
+          left 8px
+          width 2px
+        svg
+          margin-left 3px
+          top 3px
+          position absolute
+        &:hover
+          opacity 1
+      .arrows.left
+        left -9px
+      .arrows.right
+        right -9px
+    .layouts
+      .width-pointer
+        position absolute
+        height 44px
+        color #d14d3d
+        z-index 4
+        width 6px
+        .line
+          height 29px
+          width 2px
+          margin 0 auto
+          background-color #d14d3d
+          cursor e-resize
+        .label
+          text-align center
+          font-size 0.75em
+          font-weight 500
+    .layout-tab.active
+      background-color #262c38
+      box-shadow inset 0 3px 0 0 #508ce6
+      .arrows
+        display block
+    .layout-tab.active
+      &:last-child
+        .arrows.right
+          display none
+    .layout-tab.active
+      &:first-child
+        .arrows.left
+          display none
+  .designer-right
+    flex 60 0 60px
+    min-width 0
+    .v-container > .c-content
+      padding 0
+    .is-system-panel.designer-toolbar
+      flex none
+    > .v-container
+      > .c-content
+        overflow hidden
+  .designer-left
+    width 35em
+    min-width 35em
+    background-color #333947
+  .designer-toolbar.controls
+    height 3.75em
+    flex none
+    background-color #333947
+    border-top 1px solid #4e5b6d
+    -webkit-transition height .3s ease-in-out
+    -moz-transition height .3s ease-in-out
+    -ms-transition height .3s ease-in-out
+    -o-transition height .3s ease-in-out
+    transition height .3s ease-in-out
+  .model-content
+    padding 0
+    width 100%
+    flex none
+    min-height 0
+    background-color #333947
+    height 2.9375em
+    display table
+    .model-wrapper
+      opacity 0.8
+      display table-cell
+      vertical-align middle
+      padding-left 1.5em
+      color #ffffff
+      &:hover
+        opacity 1
+      svg
+        display inline
+      .icon-title
+        display inline
+        font-size 0.75em
+        color #ffffff
+        font-weight 500
+        padding-left 0.5em
+      .model-wrapper.disabled
+        opacity 0.4
+  .model-content.disabled
+    .model-wrapper
+      opacity 0.4
+  svg.scheme
+    width 100%
+    height 100%
+    g
+      > rect.border.d-control
+        stroke transparent
+        fill #3ca984
+      > rect.border.d-layout
+        border-radius 5px
+    g.cursor
+      > rect.border.d-control
+        stroke transparent
+        fill #ffffff
+      > rect.border.d-layout
+        fill #508ce6
+    rect.invisible
+      fill transparent
+  g.cursor
+    > rect.border
+      stroke-width 3px
+  g.d-control
+    image
+      fill #ffffff
+    .c-title
+      font-size 0.75em
+      font-weight 500
+      color #ffffff
+  g.d-control.cursor
+    .c-title
+      color #3ca984
+  .designer-toolbar.controls
+    .system-panel-section-left
+      border-right none
+  .designer-toolbar
+    position relative
+    color #ffffff
+    .system-toolbar-icon.button.ext-control
+      height 3.75em
+      background-color #333947
+      .icon-title
+        font-size 0.75em
+        color #ffffff
+        font-weight 500
+    .is-dots
+      display table-cell
+      position absolute
+      height 3.75em
+      right 0
+      .wrapper
+        margin-top 1.25em
+    .system-toolbar-icon-wrapper
+      padding-right 0.8em
+      text-align center
+    .system-panel-section-right
+      padding-right 1em
+      height 100%
+      border-color #4e5b6d
+      border-right-width 1px
+      border-right-style solid
+      .props-wrapper
+        display table-cell
+        vertical-align middle
+        border-radius 5px
+        > div
+          display table-cell
+          padding 0.25em
+          background-color #444d5e
+          > div
+            float left
+            margin-left 0.25em
+            input
+              width 2.5em
+              background-color #444d5e
+              border none
+              color #ffffff
+              opacity 0.8
+          .units
+            cursor pointer
+            opacity 0.8
+            &:hover
+              opacity 1
+            > div
+                display inline
+                font-size 0.75em
+                opacity 0.8
+          .orient-icon
+            opacity 0.8
+            cursor pointer
+            margin-top 3px
+            &:hover
+              opacity 1
+            > div
+              height 1.375em
+              display inline
+    .control
+      display inline-block
+      height 2em
+      width auto
+      margin-top 2px
+      margin-left 2px
+      float left
+      select, input
+        margin-top 6px
+      input
+        width 4em
+  .designer-content
+    padding 0
+    width 100%
+    flex 70 0 1px
+    min-height 0
+    overflow-y hidden
+    overflow-x hidden
+    .designer-scroll
+      position relative
+      height auto
+      overflow-y auto
+      overflow-x hidden
+      background-color #333947
+  .gen-form
+    padding 0
+    width 100%
+    flex 70 0 1px
+    .v-container
+      .c-content
+        padding 0
+    > .container
+      > .c-content
+        background-color: rgba(203, 203, 203, 0.380392)
+        overflow scroll
+        > .control-wrapper
+          margin: auto
+.container.designer  > .c-content
+  padding 0
+  overflow hidden
+  .v-container > .c-content.designer-content-wrp
+    padding 0
+    overflow visible
+  > .control.h-container
+    padding 0
+  .prop-edit
+    width 100%
+    min-height 10em
+    height 10.75em
+    background-color #333947
+    overflow: auto
+    -webkit-transition height .3s ease-in-out
+    -moz-transition height .3s ease-in-out
+    -ms-transition height .3s ease-in-out
+    -o-transition height .3s ease-in-out
+    transition height .3s ease-in-out
+    .prop-edit-header
+      height 2em
+    .prop-edit-body
+      flex 100 0 auto
+      table, th, td
+        border 1px solid #c8c8c8
+      table
+        width 100%
+        height 100%
+        font-size 0.8125em
+        border-collapse collapse
+        thead
+          th
+            font-weight 500
+            text-align left
+            padding-left 0.5em
+        tbody
+          td
+            padding-left 0.5em
+          .name
+            font-weight 500
+          .value
+            font-weight 400
+  /*.layer-header
+    fill #ff0000
+    stroke #990000
+  .layer-header.active
+    fill #990000*/
+  .layer-header-text
+    fill #ffffff
+    text-anchor start
+    font-size 11px
+    font-weight 500
+    cursor default
+  .layer-header-text.black
+    fill #4d4d4d
+  .close-form-button
+    left 24px
+    border-radius 0 8px 8px 0
+  .close-button
+    position absolute
+    background-color #313744
+    height 36px
+    width 24px
+    color #ffffff
+    z-index 1
+    margin-top 0.4em
+    display table
+    cursor pointer
+    div
+      opacity 0.4
+      vertical-align middle
+      display table-cell
+      font-size 1.35em
+      margin-left 0.25em
+      text-align center
+      &:hover
+        opacity 0.6
+  .close-button.active
+    div
+      opacity 1
+  .refresh-button
+    z-index 1
+    top 0.4em
+    left 0.4em
+    > div
+      > div
+        margin-top 5px
+  .refresh-button
+    position absolute
+    background-color #92959b
+    border-radius 8px
+    height 36px
+    width 36px
+    color #ffffff
+    display table
+    cursor pointer
+    > div
+      opacity 0.8
+      vertical-align middle
+      display table-cell
+      font-size 1.35em
+      margin-left 0.25em
+      text-align center
+      &:hover
+        opacity 1

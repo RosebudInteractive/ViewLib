@@ -1,0 +1,43 @@
+<!-- template: page -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/test.css">
+</head>
+<body>
+<div class="user-session-info"></div>
+</body>
+</html>
+
+<!-- template: user-session-info -->
+<div id="userInfo" class="user-session-info">
+    <div class="user-sessions">
+        <fieldset>
+            <legend>Sessions</legend>
+            <select id="sessions" size="5"></select>
+        </fieldset>
+    </div>
+    <div class="session-connections">
+        <fieldset>
+            <legend>Connections</legend>
+            <select id="connections" size="5"></select>
+        </fieldset>
+    </div>
+    <div class="contexts">
+        <fieldset>
+            <legend>Contexts</legend>
+            <select id="contexts" size="5"></select>
+        </fieldset>
+    </div>
+    <div class="context-forms">
+        <fieldset>
+            <legend>Forms</legend>
+            <select id="forms" size="5"></select><br>
+            <input id="btn-connect"type="button" style="margin: 4px" value="Подключиться"><br/>
+            <select id="sub-forms" size="5" hidden></select><br/>
+            <input id="btn-create-and-connect" type="button" style="margin: 4px" value="Создать и подключится"><br/>
+        </fieldset>
+    </div>
+</div>

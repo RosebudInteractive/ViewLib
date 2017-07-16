@@ -1,0 +1,167 @@
+.no-spaces div.system-toolbar-icon {
+  display: table-cell;
+}
+.clearfix:after {
+  clear: both;
+}
+.is-system-panel {
+  width: 100%;
+  overflow: hidden;
+  background-color: #38465a;
+  position: fixed;
+  top: 0px;
+  min-width: 29em;
+}
+.system-panel-section-left {
+  float: left;
+  height: 3.25em;
+  border-color: #4e5b6d;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.system-panel-section-left.is-last {
+  border-right-width: 0px;
+  border-right-style: none;
+  overflow: hidden;
+}
+.system-panel-section-left.is-last div.stretch-element {
+  position: absolute;
+  overflow: hidden;
+  padding-right: 14.825em;
+  height: 3.25em;
+}
+.system-panel-section-left.is-last div.system-toolbar-icon {
+  float: left;
+}
+.system-panel-section-right {
+  height: 3.25em;
+  position: absolute;
+  right: 0px;
+  display: table;
+/*
+  border-color #ffffff
+  border-left-width 1px
+  border-left-style solid
+  margin-left 4.125em
+  */
+}
+.system-toolbar-icon {
+  height: 3.25em;
+  cursor: pointer;
+  width: 3em;
+  background-color: #38465a;
+  transition-delay: 0.15s;
+}
+.system-toolbar-icon-wrapper {
+  opacity: 0.8;
+  transition-delay: 0.15s;
+}
+.system-toolbar-icon:hover .system-toolbar-icon-wrapper {
+  opacity: 1;
+}
+.system-toolbar-icon div.system-toolbar-icon-wrapper {
+  padding-left: 0.6875em;
+  padding-top: 1em;
+}
+.system-toolbar-icon.is-pressed {
+  background-color: #27374a;
+}
+.system-toolbar-icon.is-pressed div.system-toolbar-icon-wrapper {
+  opacity: 1;
+}
+.system-toolbar-menu-item {
+  color: #d7dade;
+  height: 100%;
+  cursor: pointer;
+  transition-delay: 0.15s;
+}
+.system-toolbar-menu-item:hover {
+  color: #fff;
+}
+.system-toolbar-menu-item.is-pressed {
+  color: #fff;
+  background-color: #27374a;
+}
+.system-toolbar-menu-item div.system-toolbar-icon-wrapper {
+  padding-left: 0.6875em;
+  padding-top: 0.9375em;
+}
+.no-spaces div.system-toolbar-menu-item {
+  display: inline-block;
+}
+.system-toolbar-menu-item div.system-toolbar-icon-wrapper {
+  opacity: 1;
+}
+.system-toolbar-menu-item div.system-toolbar-icon-wrapper div {
+  font-size: 0.8660254em;
+}
+.system-toolbar-menu-item-text {
+  display: table;
+}
+.system-toolbar-menu-item-text ul {
+  display: inline-block;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-left: 1.125em;
+  padding-left: 0.625em;
+}
+.system-toolbar-menu-item.is-active ul li {
+  color: #32bf61;
+}
+div.system-toolbar-menu-item div.system-toolbar-icon-wrapper div.system-toolbar-menu-item-text div {
+  display: table-cell;
+  vertical-align: top;
+}
+div.text-btn-e {
+  cursor: pointer;
+  padding-right: 1em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 2px;
+  font-size: 0.75em;
+  position: relative;
+}
+.system-toolbar-menu-item div.system-toolbar-icon-wrapper div.text-btn-e {
+  font-size: 0.75em;
+  margin-right: 0.8em;
+}
+div.system-toolbar-icon-wrapper.is-device-icon {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+.system-toolbar-icon div.system-toolbar-icon-wrapper.is-dots {
+  padding-left: 0.4375em;
+  padding-top: 1.1875em;
+}
+div.is-user-combo.system-toolbar-icon-wrapper {
+  padding-left: 1.375em;
+  padding-top: 1.125em;
+}
+.is-arrow-drop:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: -0.725em;
+  margin-top: -0.0675em;
+  z-index: 2;
+  border-left: 0.3625em solid transparent;
+  border-right: 0.3625em solid transparent;
+  border-top: 0.3625em solid #fff;
+}
+div.system-toolbar-menu-item.is-combo {
+  display: table-cell;
+}
+.system-panel-section-right div.system-toolbar-icon,
+div.system-toolbar-menu-item {
+  float: left;
+}
+.system-panel-section-right .system-toolbar-icon.is-device-close-icon {
+  margin-left: 1.5em;
+  padding-right: 1.5em;
+}
+.system-toolbar-menu-item .is-dot svg {
+  margin-top: 0.125em;
+}

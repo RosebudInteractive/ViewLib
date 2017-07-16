@@ -1,0 +1,22 @@
+@import "./devices"
+
+.is-left-content
+  box-sizing border-box
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  height 100%
+  width 100%
+  -webkit-transition: padding-right 0.5s ease
+  -moz-transition: padding-right 0.5s ease
+  -ms-transition: padding-right 0.5s ease
+  -o-transition: padding-right 0.5s ease
+  transition: padding-right 0.5s ease
+  -webkit-box-flex 1
+  -moz-box-flex 1
+  -webkit-flex 1 1 auto
+  -ms-flex 1 1 auto
+  flex 1 1 auto
+  position relative
+.is-content.is-device-bar-hidden div.is-left-content
+  padding-right 0
+

@@ -1,0 +1,24 @@
+.is-system-footer {
+  width: 100%;
+  overflow: hidden;
+  background-color: #38465a;
+  position: fixed;
+  bottom: 0px;
+}
+.is-system-footer-section-left {
+  float: left;
+  height: 2em;
+  border-color: #4e5b6d;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.system-footer-icon {
+  opacity: 0.8;
+  height: 2em;
+  cursor: pointer;
+  width: 2.5em;
+}
+.system-footer-icon-wrapper {
+  padding-left: 0.5em;
+  padding-top: 0.3125em;
+}

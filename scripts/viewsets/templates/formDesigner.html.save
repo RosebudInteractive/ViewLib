@@ -1,0 +1,384 @@
+<!-- template: container -->
+<div class="control-ext">
+    <div class="control v-container container designer">
+        <div class="c-content">
+            <div class="designer-toolbar main">
+                <div class="button icon-vertical" role="vertical"></div>
+                <div class="button icon-horizontal" role="horizontal"></div>
+                <div class="button icon-layer" role="layer"></div>
+                <div class="button icon-grid" role="control-grid" title="Grid"></div>
+                <div class="button icon-toolbar" role="control-toolbar" title="Toolbar"></div>
+                <div class="button icon-form" role="control-form" title="Form"></div>
+                <div class="button icon-tree" role="control-tree" title="Tree"></div>
+                <div class="button icon-delete" role="delete" title="Delete"></div>
+                <div class="button icon-add-layout" role="layout" title="Add layout"></div>
+                <div class="panel" role="changeLayout"></div>
+                <div class="button icon-refresh" role="refresh" title="Generate form"></div>
+                <div class="button icon-model" role="load-model" title="Load model"></div>
+                <div class="panel" role="layout-props">
+                    <div class="panel label">Orientation</div>
+                    <div class="control">
+                        <select role="transform">
+                            <option value="horizontal">Horizontal</option>
+                            <option value="vertical">Vertical</option>
+                            <option value="layer">Layer</option>
+                        </select>
+                    </div>
+                    <div class="panel label size-label">Size</div>
+                    <div class="control">
+                        <input role="size"/>
+                    </div>
+                </div>
+            </div>
+            <div class="designer-toolbar controls"></div>
+            <div class="control h-container container">
+                <div class="c-content">
+                    <div class="control v-container container">
+                        <div class="c-content designer-content-wrp">
+                            <div class="model-content">
+                            </div>
+                            <div class="designer-content">
+                                <svg/>
+                            </div>
+                            <div class="prop-edit"></div>
+                        </div>
+                    </div>
+                    <div class="gen-form">
+                        <div class="control v-container container">
+                            <div class="c-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- template: model -->
+{
+"$sys": {
+"guid": "cb63b2d6-93e8-2ee3-603b-884025f98c7a",
+"typeGuid": "5e89f6c7-ccc2-a850-2f67-b5f5f20c3d47"
+},
+"fields": {
+"Id": "5",
+"Name": "DataModel",
+"ResElemName": "ADataModel6"
+},
+"collections": {
+"Datasets": [
+{
+"$sys": {
+"guid": "c2de9609-237a-c3b3-12ac-43bf5b35c169",
+"typeGuid": "3f3341c7-2f06-8d9d-4099-1075c158aeee"
+},
+"fields": {
+"Id": "6",
+"Name": "DatasetLeadList",
+"ObjType": "c170c217-e519-7c23-2811-ff75cd4bfe81",
+"Active": true,
+"OnMoveCursor": " { this.getControlMgr().getByName('FormParam1').value(newVal); } ",
+"ResElemName": "Dataset6"
+},
+"collections": {
+"Fields": [
+{
+"$sys": {
+"guid": "eb6fa823-11cf-6f34-053e-533c2d391b64",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "7",
+"Name": "Id",
+"ResElemName": "DataField80"
+}
+},
+{
+"$sys": {
+"guid": "296988a7-6d26-6fec-bd6f-de7cb565cc9b",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "8",
+"Name": "Source",
+"ResElemName": "DataField81"
+}
+},
+{
+"$sys": {
+"guid": "7e81d9b8-ffdd-9adb-b27e-50bed6bf9648",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "9",
+"Name": "State",
+"ResElemName": "DataField82"
+}
+},
+{
+"$sys": {
+"guid": "23e1320b-8c99-4d82-008a-0c9fe678db08",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "10",
+"Name": "Content",
+"ResElemName": "DataField83"
+}
+},
+{
+"$sys": {
+"guid": "a0e1e0e0-0c82-29ba-cd5d-b770aa9ffcc9",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "11",
+"Name": "Creation",
+"ResElemName": "DataField84"
+}
+},
+{
+"$sys": {
+"guid": "c34e850f-7c2d-cdf1-85b7-b74a2295cc73",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "12",
+"Name": "Closed",
+"ResElemName": "DataField85"
+}
+},
+{
+"$sys": {
+"guid": "54ed8415-9663-d4e0-e19f-a6e2bf2ee7ad",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "13",
+"Name": "OpportunityId",
+"ResElemName": "DataField86"
+}
+},
+{
+"$sys": {
+"guid": "4c5fedcb-c43c-fb33-17e6-6df0e3b3e728",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "14",
+"Name": "ContactId",
+"ResElemName": "DataField87"
+}
+},
+{
+"$sys": {
+"guid": "81d400b0-8f58-a800-576f-19ea369a994d",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "15",
+"Name": "FirstName",
+"ResElemName": "DataField88"
+}
+},
+{
+"$sys": {
+"guid": "fc1bdfc6-906f-a742-1218-8454d9125623",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "16",
+"Name": "LastName",
+"ResElemName": "DataField89"
+}
+},
+{
+"$sys": {
+"guid": "d0c2d70e-7572-de26-f8a3-a527e529db0d",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "17",
+"Name": "Title",
+"ResElemName": "DataField90"
+}
+},
+{
+"$sys": {
+"guid": "eca1ef71-09a7-11a2-e244-d611df8dd77a",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "18",
+"Name": "MobilePhone",
+"ResElemName": "DataField91"
+}
+},
+{
+"$sys": {
+"guid": "2fec5ab0-24cf-83e5-5486-19dda237c4bf",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "19",
+"Name": "WorkPhone",
+"ResElemName": "DataField92"
+}
+},
+{
+"$sys": {
+"guid": "f0b24e9c-b140-bf20-1083-1edf425dfa74",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "20",
+"Name": "Email",
+"ResElemName": "DataField93"
+}
+},
+{
+"$sys": {
+"guid": "6819d5a5-0789-eda5-3cf8-43f128545ec9",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "21",
+"Name": "CompanyId",
+"ResElemName": "DataField94"
+}
+},
+{
+"$sys": {
+"guid": "bb76eac7-7f14-532f-bb28-72122339d7e0",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "22",
+"Name": "Company",
+"ResElemName": "DataField95"
+}
+},
+{
+"$sys": {
+"guid": "0bf0fc84-9c00-4d78-447b-242a18e3cd7d",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "23",
+"Name": "Industry",
+"ResElemName": "DataField96"
+}
+},
+{
+"$sys": {
+"guid": "808e498c-0586-17d0-1ce5-0ef3e65d6e12",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "24",
+"Name": "NbEmpl",
+"ResElemName": "DataField97"
+}
+},
+{
+"$sys": {
+"guid": "771cf450-fb24-04ae-dbdc-a1d1ea4a1450",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "25",
+"Name": "City",
+"ResElemName": "DataField98"
+}
+},
+{
+"$sys": {
+"guid": "dad54b1c-2a3c-a272-049a-42dd2a3a1351",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "26",
+"Name": "Address",
+"ResElemName": "DataField99"
+}
+},
+{
+"$sys": {
+"guid": "7e6cdfb8-93d7-8dee-38f0-3e2cce92bfd6",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "27",
+"Name": "PostalCode",
+"ResElemName": "DataField100"
+}
+}
+]
+}
+},
+{
+"$sys": {
+"guid": "504729ba-e002-d856-b694-271ca843a98c",
+"typeGuid": "3f3341c7-2f06-8d9d-4099-1075c158aeee"
+},
+"fields": {
+"Id": "28",
+"Name": "DatasetLeadLog",
+"ObjType": "bb48579c-808e-291e-0242-0facc4876051",
+"Active": true,
+"OnMoveCursor": " { this.getControlMgr().getByName('FormParam1').value(newVal); } ",
+"Master": "c2de9609-237a-c3b3-12ac-43bf5b35c169",
+"ResElemName": "Dataset7"
+},
+"collections": {
+"Fields": [
+{
+"$sys": {
+"guid": "cdec4144-dbdf-85c6-db91-231bb402ee84",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "29",
+"Name": "Id",
+"ResElemName": "DataField101"
+}
+},
+{
+"$sys": {
+"guid": "c63d1dd4-ffa2-2bd0-f9b4-8f658018c1c3",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "30",
+"Name": "LeadId",
+"ResElemName": "DataField102"
+}
+},
+{
+"$sys": {
+"guid": "b707c450-6cba-c9ee-f62d-4ce35f449c5f",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "31",
+"Name": "Date",
+"ResElemName": "DataField103"
+}
+},
+{
+"$sys": {
+"guid": "4507be07-a3ff-65d9-465c-7f8d6ff122a5",
+"typeGuid": "4bade3a6-4a25-3887-4868-9c3de4213729"
+},
+"fields": {
+"Id": "32",
+"Name": "Content",
+"ResElemName": "DataField104"
+}
+}
+]
+}
+}
+]
+}
+}

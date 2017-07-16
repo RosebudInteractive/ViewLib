@@ -1,0 +1,14 @@
+/*#maingrid td,th
+  width 1em*/
+#maingrid td.ID,
+th.ID {
+  width: 3em;
+}
+#maingrid td.GUID,
+th.GUID {
+  width: 7em;
+}
+#maingrid td.GUID_VER,
+th.GUID_VER {
+  width: 20%;
+}

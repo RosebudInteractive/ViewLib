@@ -1,0 +1,67 @@
+.tree
+  font-size 16px !important
+  .webix_dd_drag_column, .webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header
+    font-size 16px !important
+    background #ffffff
+    color #848995
+    font-family OpenSansRegular
+  .webix_view
+    .webix_tree_open:before
+      content "\f0d7"
+      display inline-block
+      transition all 0.25s ease
+    .webix_tree_close:before
+      content "\f0d7"
+      transform rotate(-90deg)
+      display inline-block
+      transition all 0.25s ease
+      //content "\f0da"
+      //transition content 0.25s ease
+.tree
+  .webix_hcell
+    font-size 0.75em !important
+    font-family OpenSans
+  .webix_cell
+    font-family OpenSans
+  .webix_first
+    .webix_cell
+      padding-left 18px
+    .webix_hcell
+      padding-left 24px
+  .webix_last
+    .webix_cell, .webix_hcell
+      padding-right 24px
+.tree.standard-size
+  .webix_cell
+    font-size 0.75em !important
+.tree.small-size
+  .webix_hcell, .webix_cell
+    font-size 0.75em !important
+.tree.large-size
+  .webix_cell
+    font-size 0.8125em !important
+
+.tree
+  .webix_ss_header td
+    border-color #d8e0ed
+  .webix_ss_vscroll_header
+    border-color #d8e0ed
+  .webix_column > div, .webix_table_cell
+    border-color transparent
+  .webix_column>div.webix_row_select
+    background-color #9ab3d5
+.tree&:focus
+    .webix_column>div.webix_row_select
+      background-color #5195e5
+
+.tree.horizontal-lines
+  .webix_column > div
+    border-bottom-color #d8e0ed
+.tree.vertical-lines
+  .webix_column>div, .webix_table_cell
+    border-right-color #d8e0ed
+.tree.alternate-lines
+  .webix_cell:nth-child(2n)
+    background-color #f5f7fc
+
+

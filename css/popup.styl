@@ -1,0 +1,181 @@
+.dropdown2-b
+  font-family OpenSans
+  line-height 1.875em
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  position absolute
+  padding-bottom  0.5625em
+  padding-top 0.5625em
+  background-color #ffffff
+  border-radius 0.25em
+  cursor default
+  z-index 5
+  box-shadow 1px 1px 0.75em 1px rgba(38,44,56,0.5)
+  -webkit-box-shadow 1px 1px 0.75em 1px rgba(38,44,56,0.5)
+  -moz-box-shadow 1px 1px 0.75em 1px rgba(38,44,56,0.5)
+
+.dropdown2-b .top-padding
+  height 0.5625em
+.dropdown-menu-item2-b
+  position: relative;
+  color #718ab2
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+.dropdown-menu-item2-b.is-title .text-bl
+  padding-left 1.25em
+  &:hover
+    background-color #ffffff
+.dropdown-menu-item2-b.is-separator
+  height 0px
+  border-bottom solid 1px #d7e2f5
+  margin-bottom 0.375em
+  margin-top 0.375em
+
+.dropdown-menu-item2-b.is-header.is-open .arrow-be-wrapper
+  -webkit-transform rotate(90deg)
+  -moz-transform rotate(90deg)
+  -ms-transform rotate(90deg)
+  -o-transform rotate(90deg)
+  transform rotate(90deg)
+  -webkit-transform-origin 50% 50%
+  transform-origin 50% 50%
+
+.dropdown-menu-item2-b.is-header.is-open .arrow-be
+  border-left-color #2f333;
+.dropdown-menu-item2-b.is-header .arrow-be-wrapper
+  position absolute
+  left 0.9em
+  top 0.675em
+  width 0.75em
+  height 0.75em
+.dropdown-menu-item2-b.is-header .arrow-be
+  width 0
+  height 0
+  position absolute
+  top 0.125em
+  left 0.25em
+  border 0.25em solid transparent
+  border-left-color #848995
+.dropdown-menu-item2-b.is-header .arrow-be-wrapper
+  -webkit-transition all 0.2s linear
+  -moz-transition all 0.2s linear
+  -o-transition all 0.2s linear
+  transition all 0.2s linear
+
+.dropdown-menu-item2-b .text-bl
+  font-size 0.8125em
+  padding-left 2.5em
+  padding-right 2em
+  border-radius 0.1875em
+  white-space nowrap
+  -webkit-text-overflow ellipsis
+  -moz-text-overflow ellipsis
+  -khtml-text-overflow ellipsis
+  -icab-text-overflow ellipsis
+  -o-text-overflow ellipsis
+  text-overflow ellipsis
+  overflow hidden
+  color rgba(47,52,63,1)
+.dropdown-menu-item2-b .content-bl .text-bl
+  padding-left 3.5em
+.dropdown-menu-item2-b .right-icon svg
+  color #848995
+  &:hover
+    color #508CE6
+.dropdown-menu-item2-b .dropdown-menu-item-wrapper .right-icon.is-pressed
+  opacity 1
+  svg
+    color #508CE6
+.dropdown2-b .dropdown-menu-item-wrapper
+  &:hover
+    background-color #EBF0FA
+.dropdown2-b .right-icon
+  position absolute
+  right 0.9375em
+  top 0.1875em
+.dropdown2-b .left-icon
+  width 24px
+  height 24px
+  position absolute
+  left 0.9375em
+  top 0.1875em
+.dropdown2-b:not(.has-left-icons) > .dropdown-menu-item2-b > .dropdown-menu-item-wrapper > .left-icon
+  display none
+.dropdown2-b.has-left-icons .dropdown-menu-item2-b:not(.is-title) .text-bl
+  padding-left 3.538461538461538em
+.dropdown2-b.has-right-icons .dropdown-menu-item2-b:not(.is-title) .text-bl
+  padding-right 3.692307692307692em
+
+/* Выпирающий угол */
+.dropdown2-b.is-right > .arrow-be
+  margin-left -1.1825em
+  left 100%
+.dropdown2-b.is-right.big-interval > .arrow-be
+  margin-left -2.1825em
+.dropdown2-b.is-top > .arrow-be
+  top -0.245em
+.dropdown2-b.is-left > .arrow-be
+  margin-left 1em
+  left 0
+.dropdown2-b.is-left.big-interval > .arrow-be
+  left 1em
+.dropdown2-b.is-bottom-right > .arrow-be
+  bottom 1em
+  margin-left -0.245em
+  left 100%
+.dropdown2-b.is-bottom-left > .arrow-be
+  bottom 1em
+  margin-left -0.245em
+.dropdown2-b.is-top-right > .arrow-be
+  top 1em
+  margin-left -0.245em
+  border 1px solid transparent
+  left 100%
+.dropdown2-b.is-top-left > .arrow-be
+  top 1em
+  margin-left -0.245em
+  border 1px solid transparent
+
+
+.dropdown2-b > .arrow-be
+  width 0.365em
+  height 0.365em
+  position absolute
+  overflow hidden
+  transform-origin 50%
+  -webkit-transform rotate(45deg)
+  -moz-transform rotate(45deg)
+  -ms-transform rotate(45deg)
+  -o-transform rotate(45deg)
+  transform rotate(45deg)
+  border-radius 2px
+  z-index 0
+  background-color #ffffff
+  border 1px solid transparent
+  bottom -0.245em
+.dropdown-menu-item2-b .dropdown-menu-item-wrapper .right-icon
+  opacity 0
+.dropdown-menu-item2-b .dropdown-menu-item-wrapper:hover .right-icon
+  opacity 1
+
+/* серое меню */
+.dropdown2-b.is-gray-menu
+  background-color #586278
+.dropdown2-b.is-gray-menu .dropdown-menu-item2-b .text-bl
+  color #bcc0c9
+  &:hover
+    color #ffffff
+
+.dropdown2-b.is-gray-menu .dropdown-menu-item-wrapper
+  &:hover
+    background-color #4b5467
+    color #ffffff
+.dropdown2-b.is-gray-menu .dropdown-menu-item-wrapper .left-icon:parent .text-bl
+  color #ffffff
+
+.dropdown2-b.is-gray-menu .dropdown-menu-item2-b.is-separator
+  border-color #bcc0c9
+.dropdown2-b.is-gray-menu > .arrow-be
+  background-color #586278

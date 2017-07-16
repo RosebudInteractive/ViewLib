@@ -1,0 +1,204 @@
+//.container
+  //box-shadow inset 1 0 #000000, 0 1 #000000, -1 0 #000000, 0 -1 #000000
+  //border solid 1px #000000
+//  outline 1px solid #000000
+.control
+  width 100%
+  height 100%
+.c-content
+  box-sizing border-box
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+
+.control.form.is-centered > .c-content
+.c-container.container > .c-content
+.v-container.container > .c-content
+.g-container.container > .c-content
+  padding 1.125em 1.125em 1.5em 1.125em
+.v-container.a-container.container > .c-content
+.v-container.a-container.container > .c-content > .control-wrapper
+  height 100%
+.v-container.a-container.container > .c-content
+  .v-container > .c-content
+    padding 0
+.control-ext
+  width 100%
+  height 100%
+  box-sizing border-box
+  position relative
+.control.form > .c-content
+.c-container.container > .c-content
+.v-container.container > .c-content
+.g-container.container > .c-content
+.l-container.container > .c-content
+  width 100%
+  height 100%
+  position relative
+.m-container.container > .c-content
+  /*padding 1.5em*/
+  td.col-separator
+    width 2.25em
+.h-container.container
+  position relative
+.h-container.container > .c-content
+  width 100%
+  height 100%
+.v-container.container > .c-content
+  min-height 100%
+.h-container.container > .c-content
+  min-width 100%
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+.h-container.container > .c-content,
+.v-container.container > .c-content
+  display flex
+  display -webkit-flex
+  display -moz-flex
+  overflow auto
+.v-container.container > .c-content
+  flex-direction column
+  -webkit-flex-direction column
+  -moz-flex-direction column
+  -ms-flex-direction: column;
+.h-container.container > .c-content
+  flex-direction row
+  //-webkit-flex-direction row
+  //-moz-flex-direction row
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+.g-container.container > .c-content > table
+    width 100%
+    height 100%
+    border-spacing 0px
+    td
+      //border solid 1px #000000
+      border none
+      position relative
+    td > .c-content
+      width 100%
+      height 100%
+      position relative
+      top 0px
+      left 0px
+textarea
+  word-wrap break-word
+td.container-title
+  padding-bottom 1.25em
+.container-title .cont-title-text
+    float right
+.container-title .cont-title-icon
+  float  left
+.cont-title-icon
+  color #508CE6
+.control-wrapper
+  position relative
+  overflow hidden
+  box-sizing border-box
+.control-wrapper > div.mid-wrapper
+  height 100%
+  width 100%
+  position absolute
+  box-sizing border-box
+
+/* flex container */
+.f-row
+  position relative
+  box-sizing border-box
+  float left
+  width 100%
+.f-row > div
+  float left
+.grid
+  top 0
+  left 0
+  width 100%
+  height 100%
+  position absolute
+  box-sizing border-box
+  z-index 1
+.grid-column
+  outline solid 1px #00aaee
+  float left
+  position relative
+  height 100%
+.f-row > .control-wrapper
+  background-color #ffffff
+  box-sizing border-box
+/*.control.container.f-container > .c-content
+  margin-left 1.25em
+  margin-right 1.25em*/
+.control.container.f-container > .control-wrapper.empty.padding
+  float left
+  background-color #ffffff
+  &:first-child
+    border-top-left-radius 5px
+    border-bottom-left-radius 5px
+  &:last-child
+    border-top-right-radius 5px
+    border-bottom-right-radius 5px
+.control.label.cont-label
+  font-size 1.125em
+  font-weight 500
+  color: rgba(50,56,69,1)
+  padding-left 0.7222em
+  padding-top 0.5em
+.control.container.f-container > .c-content
+  float left
+  width auto
+  /*padding-bottom 1em */
+.control.container.f-container
+  float left
+  background-color #ffffff
+  height auto
+.iScrollIndicator
+  transition all 0.1s ease-out
+.iScrollVerticalScrollbar
+  padding-right 2px
+.iScrollLoneScrollbar
+  .iScrollIndicator
+    opacity 0
+  &:hover
+    .iScrollIndicator
+      opacity 1
+.control.container > .c-content > .control-wrapper
+  background #ffffff
+.reset-l
+  position absolute
+  overflow auto
+.control.container > .scroll-header
+  position absolute
+  top 0px
+  width 100%
+  height 1.5em
+  z-index 2
+  /*background-color #ffffff
+  opacity 0.5*/
+  background-image -webkit-linear-gradient(bottom, transparent, white)
+  background-image    -moz-linear-gradient(bottom, transparent, white)
+  background-image      -o-linear-gradient(bottom, transparent, white)
+  background-image         linear-gradient(bottom, transparent, white)
+/* controls separator */
+.control-separator
+  display none
+  position absolute
+  background-image url("/images/1px_border.png")
+  background-repeat repeat
+  z-index 2
+.control.container.h-container.separate-children > .c-content > .control-wrapper > .control-separator
+.control.container.v-container.separate-children > .c-content > .control-wrapper > .control-separator
+  display block
+  &:last-child
+    display none
+.control.container.h-container.separate-children > .c-content > .control-wrapper > .control-separator
+  top 0px
+  right 0px
+  height 100%
+  width 1px
+.control.container.v-container.separate-children > .c-content > .control-wrapper > .control-separator
+  bottom 0px
+  left 0px
+  width 100%
+  height 1px
+/* controls separator end */

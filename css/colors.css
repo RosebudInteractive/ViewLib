@@ -1,0 +1,104 @@
+.control.button input {
+  outline: none;
+}
+.control.button input:focus {
+  outline: none;
+}
+.control.button.is-white {
+  border-radius: 5px;
+  background-color: #fff;
+  border: solid 1px #babec5;
+  box-shadow: 0 1px 2px 0px #dadce0;
+  -webkit-box-shadow: 0 1px 2px 0px #dadce0;
+  -moz-box-shadow: 0 1px 2px 0px #dadce0;
+}
+.control.button.is-white input {
+  background: transparent;
+}
+.control.button.is-white:hover {
+  background: -moz-linear-gradient(bottom, #f5f6fa, #fff);
+  background: -webkit-gradient(linear, bottom, top, color-stop(100%, #f5f6fa), color-stop(100%, #fff));
+  background: -webkit-linear-gradient(bottom, #f5f6fa, #fff);
+  background: -o-linear-gradient(bottom, #f5f6fa, #fff);
+  background: -ms-linear-gradient(bottom, #f5f6fa, #fff);
+  background: linear-gradient(to top, #f5f6fa, #fff);
+}
+.control.button.is-white:focus {
+  border-color: #5195e5;
+  box-shadow: 0 1px 6px 0px rgba(80,40,230,0.5);
+  -webkit-box-shadow: 0 1px 6px 0px rgba(80,40,230,0.5);
+  -moz-box-shadow: 0 1px 6px 0px rgba(80,40,230,0.5);
+}
+.control.button.is-white.is-click {
+  background-color: #718ab2;
+  color: #fff !important;
+  border-color: #babec5;
+  box-shadow: inset 0 1px 3px 0px #5c6f8e;
+  -webkit-box-shadow: inset 0 1px 2px 0px #5c6f8e;
+  -moz-box-shadow: inset 0 1px 2px 0px #5c6f8e;
+}
+.control.button.is-white.is-click:hover {
+  background: #718ab2;
+}
+.control.button.is-white.is-click input {
+  color: #fff !important;
+}
+.control.button.is-green {
+  border-radius: 5px;
+  background: -moz-linear-gradient(bottom, #2ebb5b, #36c56a);
+  background: -webkit-gradient(linear, bottom, top, color-stop(100%, #2ebb5b), color-stop(100%, #36c56a));
+  background: -webkit-linear-gradient(bottom, #2ebb5b, #36c56a);
+  background: -o-linear-gradient(bottom, #2ebb5b, #36c56a);
+  background: -ms-linear-gradient(bottom, #2ebb5b, #36c56a);
+  background: linear-gradient(to top, #2ebb5b, #36c56a);
+  color: #fff;
+  border: solid 1px #009c48;
+  box-shadow: 0 2px 2px 0px #38465a;
+  -webkit-box-shadow: 0 2px 2px 0px #38465a;
+  -moz-box-shadow: 0 2px 2px 0px #38465a;
+}
+.control.button.is-green input {
+  color: #fff;
+  background: transparent;
+}
+.control.button.is-green:hover {
+  background: #718ab2;
+  background: -moz-linear-gradient(bottom, #17b052, #36c56a);
+  background: -webkit-gradient(linear, bottom, top, color-stop(100%, #17b052), color-stop(100%, #36c56a));
+  background: -webkit-linear-gradient(bottom, #17b052, #36c56a);
+  background: -o-linear-gradient(bottom, #17b052, #36c56a);
+  background: -ms-linear-gradient(bottom, #17b052, #36c56a);
+  background: linear-gradient(to top, #17b052, #36c56a);
+}
+.control.button.is-green:focus {
+  border-color: #5195e5;
+  box-shadow: 0 1px 6px 0px #009c48;
+  -webkit-box-shadow: 0 1px 6px 0px #009c48;
+  -moz-box-shadow: 0 1px 6px 0px #009c48;
+}
+.control.button.is-green.is-click {
+  background-color: #718ab2 !important;
+  background: none;
+  color: #fff !important;
+  border-color: #babec5 !important;
+  box-shadow: inset 0 1px 3px 0px #5c6f8e;
+  -webkit-box-shadow: inset 0 1px 2px 0px #5c6f8e;
+  -moz-box-shadow: inset 0 1px 2px 0px #5c6f8e;
+}
+.control.button.is-green.is-click:hover {
+  background: #718ab2;
+}
+.control.button.is-icon .is-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.control.button.is-icon .is-wrapper div.is-icon-wrapper {
+  margin-top: 0.25em;
+  margin-left: 0.6875em;
+}
+.control.button.is-icon .is-wrapper input {
+  padding-left: 0.5em;
+}

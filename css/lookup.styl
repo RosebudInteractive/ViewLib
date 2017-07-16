@@ -1,0 +1,58 @@
+.control.edit.lookup
+  position relative
+  color #718ab2
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  &:focus
+    outline none
+    .lookup-text-wrapper
+      border-bottom dotted 1px #508ce6
+  &:hover
+    .lookup-text-wrapper
+      border-bottom dotted 1px #508ce6
+  &::selection
+    .lookup-text-wrapper
+      background #508ce6
+.lookup-text-wrapper
+  border-bottom dotted 1px #c6c6c8
+  padding-top 0.25em
+  padding-left 0.15384615em
+.lookup-text
+  width 100%
+  font-size 1em
+  font-weight 400
+  color #323845;
+  letter-spacing: 0.01em
+  text-align left
+.lookup-arrow-wrapper
+  position absolute
+  right 0.45em
+  top 0.5em
+  width 0.75em
+  height 0.75em
+  -webkit-transform rotate(90deg)
+  -moz-transform rotate(90deg)
+  -ms-transform rotate(90deg)
+  -o-transform rotate(90deg)
+  transform rotate(90deg)
+  -webkit-transform-origin 50% 50%
+  transform-origin 50% 50%
+  -webkit-transition all 0.2s linear
+  -moz-transition all 0.2s linear
+  -o-transition all 0.2s linear
+  transition all 0.2s linear
+.lookup-arrow-wrapper.is-open
+  -webkit-transform rotate(-90deg)
+  -moz-transform rotate(-90deg)
+  -ms-transform rotate(-90deg)
+  -o-transform rotate(-90deg)
+  transform rotate(-90deg)
+.lookup-arrow
+  width 0
+  height 0
+  position absolute
+  top 0.125em
+  left 0.25em
+  border 0.25em solid transparent
+  border-left-color #848995
